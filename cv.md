@@ -2,10 +2,10 @@
 **_Beginner Software Developer_**
 ************
 ## Contacts
-Location: Saint-Petersburg
-E-mail: rmnosipov59@gmail.com
-GitHub: rmaxer1408.github.com
-Discord: fucktorial (@rmaxer1408)
+* Location: Saint-Petersburg
+* E-mail: rmnosipov59@gmail.com
+* GitHub: https://github.com/rmaxer1408
+* Discord: fucktorial (@rmaxer1408)
 ******************************
 ## About me
 My goal is to become a junior software developer.
@@ -18,7 +18,7 @@ My goal is to become a junior software developer.
 * HTML/CSS
 ******************************
 ## Example of code
-[**Codewars**](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/javascript):
+**[Codewars](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/javascript)**:
 
 Complete the solution so that it splits the string into pairs of two characters. If the string contains an odd number of characters then it should replace the missing second character of the final pair with an underscore ('_').
 
