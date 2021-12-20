@@ -1,5 +1,5 @@
 # *Roman Osipov*
-**_Beginner Software Developer_**
+***Beginner Software Developer***
 ***
 ## Contacts
 * Location: Saint-Petersburg
