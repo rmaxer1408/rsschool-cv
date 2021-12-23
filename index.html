@@ -16,7 +16,7 @@
 <body>
     <!-- <img src="./assets/img/photo.jpg" alt="my photo"> -->
     <header class="header">
-        <div class="container header-wrap">
+        <div class="container header-container">
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
@@ -31,82 +31,95 @@
         </div>
     </header>
     <main class="main">
-        <div class="container">
-            <section class="section" id="profile">
-                <img src="./assets/img/photo.jpg" alt="my photo" class="section-profile-photo">
-                <h1 class="section-title">Roman Osipov</h2>
-                    <h3 class="section-subtitle">Begginer software developer</h3>
-            </section>
-            <section class="section" id="contacts">
-                <h2 class="section-title">Contacts</h2>
-                <ul class="section-list">
-                    <li class="section-item">Location: Saint-Petersburg</li>
-                    <li class="section-item">E-mail: <a href="mailto:rmnosipov59@gmail.com"
-                            title="email">rmnosipov59@gmail.com</a></li>
-                    <li class="section-item">GitHub: <a href="https://github.com/rmaxer1408"
-                            title="github">github.com/rmaxer1408</a></li>
-                    <li class="section-item">Discord: <a href="https://discord.gg/AeM5eteZ" title="diskord">fucktorial
-                            (@rmaxer1408)</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="section" id="about_me">
-                <h2 class="section-title">About me</h2>
-                <p>My goal is to become a junior software developer.</p>
-            </section>
-            <section class="section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <ul class="section-list">
-                    <li class="section-item">Python</li>
-                    <li class="section-item">JavaScript</li>
-                    <li class="section-item">HTML/CSS</li>
-                    <li class="section-item">SQL</li>
-                    <li class="section-item">Git</li>
-                </ul>
-            </section>
-            <section class="section" id="code">
-                <h2 class="section-title">Example of code</h2>
-                <h4>Codewars:</h3>
-                    <p>Complete the solution so that it splits the string into pairs of two characters. If the string
-                        contains an odd number of characters then it should replace the missing second character of the
-                        final pair with an underscore (‘_’).</p>
+        <div class="container main-container">
+            <div class="container-left">
+                <section class="section" id="profile">
+                    <img src="./assets/img/photo.jpg" alt="my photo" class="section-profile-photo">
+                    <h1 class="section-title">Roman Osipov</h2>
+                        <h3 class="section-subtitle section-title">Begginer software developer</h3>
+                </section>
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list">
+                        <li class="section-item">Location: Saint-Petersburg</li>
+                        <li class="section-item">E-mail: <a href="mailto:rmnosipov59@gmail.com"
+                                title="email">rmnosipov59@gmail.com</a></li>
+                        <li class="section-item">GitHub: <a href="https://github.com/rmaxer1408"
+                                title="github">github.com/rmaxer1408</a></li>
+                        <li class="section-item">Discord: <a href="https://discord.gg/AeM5eteZ"
+                                title="diskord">fucktorial
+                                (@rmaxer1408)</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="container-right">
+                <section class="section" id="about_me">
+                    <h2 class="section-title">About me</h2>
+                    <p>My goal is to become a junior software developer.</p>
+                </section>
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="section-list">
+                        <li class="section-item">Python</li>
+                        <li class="section-item">JavaScript</li>
+                        <li class="section-item">HTML/CSS</li>
+                        <li class="section-item">SQL</li>
+                        <li class="section-item">Git</li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Example of code</h2>
+                    <h4>Codewars:</h3>
+                        <p>Complete the solution so that it splits the string into pairs of two characters. If the
+                            string
+                            contains an odd number of characters then it should replace the missing second character of
+                            the
+                            final pair with an underscore (‘_’).</p>
 
-                    <code>
-        <pre>
-        function solution(str){
-            if (str.length % 2 != 0) {
-                str = str + '_';
-            }  
-            return str.match(/../g);
-        }
-        </pre>                    
-                </code>
-            </section>
-            <section class="section" id="expirience">
-                <h2 class="section-title">Expirience</h2>
-                <ul class="section-list">
-                    <li class="section-item"><a href="https://rmaxer1408.github.io/rsschool-cv/cv">rs-school-cv</a></li>
-                </ul>
-            </section>
-            <section class="section" id="education">
-                <h2 class="section-title">Education</h2>
-                <ul class="section-list">
-                    <li class="section-item">RS-School(JS)</li>
-                    <li class="section-item">GeekBrains(Python)</li>
-                    <li class="section-item">SPbU(Physics)</li>
-                </ul>
-            </section>
-            <section class="section" id="language">
-                <h2 class="section-title">Languages</h2>
-                <ul class="section-list">
-                    <li class="section-item">English(B1)</li>
-                    <li class="section-item">Komi</li>
-                    <li class="section-item">Russian</li>
-                </ul>
-            </section>
+                        <pre>
+                            <code data-language="javascript">
+            function solution(str){
+                if (str.length % 2 != 0) {
+                    str = str + '_';
+                }  
+                return str.match(/../g);
+            }
+                            </code>
+                        </pre>
+                </section>
+                <section class="section" id="expirience">
+                    <h2 class="section-title">Expirience</h2>
+                    <ul class="section-list">
+                        <li class="section-item"><a href="https://rmaxer1408.github.io/rsschool-cv/cv">rs-school-cv</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="section" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <ul class="section-list">
+                        <li class="section-item">RS-School(JS)</li>
+                        <li class="section-item">GeekBrains(Python)</li>
+                        <li class="section-item">SPbU(Physics)</li>
+                    </ul>
+                </section>
+                <section class="section" id="language">
+                    <h2 class="section-title">Languages</h2>
+                    <ul class="section-list">
+                        <li class="section-item">English(B1)</li>
+                        <li class="section-item">Komi</li>
+                        <li class="section-item">Russian</li>
+                    </ul>
+                </section>
+            </div>
         </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container footer-container">
+            <div>© 2022 <a href="https://github.com/rmaxer1408" class="nav-link">rmaxer1408</a></div>
+            <a href="https://rs.school/js/" class="rss"></a>
+        </div>
+    </footer>
 
 </body>
 
