@@ -46,3 +46,9 @@ body {
 
     transition: .4s;
 }
+
+.section-profile-photo {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;    
+}
