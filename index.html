@@ -7,14 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 
 <body>
-    <!-- <img src="./assets/img/photo.jpg" alt="my photo"> -->
     <header class="header">
         <div class="container header-container">
             <nav class="nav">
@@ -34,9 +30,12 @@
         <div class="container main-container">
             <div class="container-left">
                 <section class="section" id="profile">
-                    <img src="./assets/img/photo.jpg" alt="my photo" class="section-profile-photo">
-                    <h1 class="section-title">Roman Osipov</h2>
-                        <h3 class="section-subtitle section-title">Begginer software developer</h3>
+                    <div class="container-photo">
+                        <img src="./assets/img/photo.jpg" alt="my photo" class="section-profile-photo">
+                    </div>
+
+                    <h1 class="section-title">Roman Osipov</h1>
+                    <h2 class="section-subtitle section-title">Begginer software developer</h2>
                 </section>
                 <section class="section" id="contacts">
                     <h2 class="section-title">Contacts</h2>
@@ -70,23 +69,23 @@
                 </section>
                 <section class="section" id="code">
                     <h2 class="section-title">Example of code</h2>
-                    <h4>Codewars:</h3>
-                        <p>Complete the solution so that it splits the string into pairs of two characters. If the
-                            string
-                            contains an odd number of characters then it should replace the missing second character of
-                            the
-                            final pair with an underscore (‘_’).</p>
+                    <h3>Codewars:</h3>
+                    <p>Complete the solution so that it splits the string into pairs of two characters. If the
+                        string
+                        contains an odd number of characters then it should replace the missing second character of
+                        the
+                        final pair with an underscore ('_').</p>
 
-                        <pre>
-                            <code data-language="javascript">
-            function solution(str){
-                if (str.length % 2 != 0) {
-                    str = str + '_';
-                }  
-                return str.match(/../g);
-            }
-                            </code>
-                        </pre>
+                    <pre>
+                        <code data-language="javascript">
+function solution(str){
+    if (str.length % 2 != 0) {
+        str = str + '_';
+    }  
+    return str.match(/../g);
+}
+                        </code>
+                    </pre>
                 </section>
                 <section class="section" id="expirience">
                     <h2 class="section-title">Expirience</h2>
@@ -120,7 +119,6 @@
             <a href="https://rs.school/js/" class="rss"></a>
         </div>
     </footer>
-
 </body>
 
 </html>

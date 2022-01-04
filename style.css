@@ -42,17 +42,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     list-style: none;
 }
 
 .nav-link {
     padding: 0 20px;
-    line-height: 50px;
-    
-    
-    color: #075207f1 ;
-
+    line-height: 50px;    
+    color: #075207f1;
     transition: .4s;
 }
 
@@ -61,30 +57,39 @@ a {
     gap: 1vh;
 }
 
-.container-left {
+.container-left {    
     width: 50%;
-
+    padding: 0 1rem;
     background-color: #999999;
 }
 
 .container-right {
     width: 50%;
-
+    padding: 0 1rem;  
     background-color: #aaaaaa;
-}
-
-.section {
-    padding: 0 1rem;
-    min-height: 20vh;    
 }
 
 .section-title {
     text-align: center;
 }
 
-.section-profile-photo {
-    width: 100%;     
-    
+.section-profile-photo {    
+    width: 100%; 
+    padding: 0.5em 10em 0 10em;
+}
+
+.section-item {
+    list-style-type: none;     
+}
+
+.section-item::before {
+    content: "";  
+    display: inline-block;  
+    width: 0.5rem;
+    height: 0.5rem; 
+    border-radius: 50%;   
+    margin-right: 0.5rem; 
+    background-color: #075207f1;    
 }
 
 .footer {
@@ -93,12 +98,13 @@ a {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .rss {
     width: 150px;
     height: 45px;
+    align-self: center;
     background-image: url("assets/svg/rs_school_js.svg");
     background-size: contain;
     background-repeat: no-repeat;
